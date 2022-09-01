@@ -3,13 +3,61 @@
     <head>
         <meta charset="UTF-8">
         <title>Login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                background: url('some.png');
+                height: 100%;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            div::before {
+                content: '';
+                position:absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                -webkit-filter: blur(5px);
+                -moz-filter: blur(5px);
+                -o-filter: blur(5px);
+                -ms-filter: blur(5px);
+                filter: blur(5px);
+                background-color: #E2D6D1;
+                z-index: -1;
+            }
+            .center {
+                position: absolute;
+                top: 50%;
+                width: 100%;
+                text-align: center;
+                font-size: 18px;
+            }
+            .text {
+                text-align: center;
+                color:#006464;
+                font-family:'Trebuchet MS', sans-serif;
+            }
+            input {
+                border: none;
+                border-bottom: 2px solid #006464;
+            }
+            .button1 {
+                background-color: #E2D6D1;
+                color: #006464;
+                border: 2px solid ##006464;
+            }
+    </style>
     </head>
     <body>
-        <h1>Hey, login only available for collective members</h1>
-        <form method="post">
-            Username: <input type="text" name="username"><br/>
-            Password: <input type="password" name="password"><br/>
-            <input type="submit">
-        </form>
+        <div class="center">
+            <h1 class="text">Hey, login only available for collective members</h1>
+            <form method="post" class="text">
+                Username: <input type="text" name="username"><br/>
+                Password: <input type="password" name="password"><br/>
+                <input type="submit" class="text">
+            </form>
+        </div>
     </body>
 </html>
