@@ -31,7 +31,7 @@ def get_library_page():
     return response
 
 
-@app.route('/login', methods=['POST'])
+@app.route('/login', methods=['GET'])
 def login_page():
     response = render_template('login.html')
 
